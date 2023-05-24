@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:recruitTest
+    username: sa
+    password:
+    hikari:
+      maximum-pool-size: 30
+      minimum-idle: 30
+      idle-timeout: 10000
+      max-lifetime: 420000
+      connection-timeout: 10000
+      validation-timeout: 10000
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
